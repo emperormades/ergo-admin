@@ -19,8 +19,8 @@ export default function Login() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!isFormValid) return
-    // Handle login logic here
-    console.log('Login attempt:', { email, password, rememberMe })
+    // Navigate to dashboard without validation
+    navigate('/dashboard')
   }
 
   return (
