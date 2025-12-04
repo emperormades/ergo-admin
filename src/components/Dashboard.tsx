@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Dashboard.css'
 import LineChart from './LineChart'
 import BarChart from './BarChart'
+import AddPackageModal from './AddPackageModal'
 
 // Image assets from Figma
 const imgImageErgo360 = "https://www.figma.com/api/mcp/asset/de67e916-e198-45a5-8d16-4a5db4716304"
@@ -19,6 +21,9 @@ const imgIcon2 = "https://www.figma.com/api/mcp/asset/520123fa-0270-4b74-a1de-91
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<'Empresa' | 'Autônomo'>('Empresa')
+  const navigate = useNavigate()
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedUserId, setSelectedUserId] = useState<string | null>(null)
 
   // Dados para categoria Empresa
   const empresaLineData = [
@@ -74,6 +79,23 @@ export default function Dashboard() {
     { date: '17/10', value: 0 },
   ]
 
+  const handleOpenModal = (userName: string) => {
+    setSelectedUserId(userName)
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
+    setSelectedUserId(null)
+  }
+
+  const handleAddPackage = (quantity: number) => {
+    if (selectedUserId) {
+      console.log(`Adicionando ${quantity} laudos para ${selectedUserId}`)
+      // Aqui você pode adicionar a lógica para adicionar o pacote
+    }
+  }
+
   return (
     <div className="dashboard-container">
       {/* Sidebar */}
@@ -83,7 +105,7 @@ export default function Dashboard() {
             <img src={imgIcon3} alt="" className="nav-icon" />
             <span>Dashboard</span>
           </div>
-          <div className="nav-button">
+          <div className="nav-button" onClick={() => navigate('/usuarios')}>
             <img src={imgIcon4} alt="" className="nav-icon" />
             <span>Usuários</span>
           </div>
@@ -258,7 +280,10 @@ export default function Dashboard() {
                     <td>Autônomo</td>
                     <td className="text-danger">0</td>
                     <td>
-                      <button className="action-button">
+                      <button
+                        className="action-button"
+                        onClick={() => handleOpenModal('Carlos Mota')}
+                      >
                         <img src={imgIcon} alt="" />
                         Adicionar pacote
                       </button>
@@ -274,7 +299,10 @@ export default function Dashboard() {
                     <td>Empresa</td>
                     <td className="text-warning">5</td>
                     <td>
-                      <button className="action-button">
+                      <button
+                        className="action-button"
+                        onClick={() => handleOpenModal('Fernando Lima')}
+                      >
                         <img src={imgIcon} alt="" />
                         Adicionar pacote
                       </button>
@@ -375,6 +403,13 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+
+      {/* Add Package Modal */}
+      <AddPackageModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        onAdd={handleAddPackage}
+      />
     </div>
   )
 }

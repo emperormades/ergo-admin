@@ -1,0 +1,120 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.confirm-modal-content {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  width: 512px;
+  max-width: 90vw;
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.confirm-modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.confirm-modal-header h2 {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+.confirm-modal-header p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #717182;
+  margin: 0;
+  max-width: 431px;
+}
+
+.confirm-modal-footer {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.cancel-button {
+  height: 36px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 9px 17px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0a0a0a;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 88.344px;
+}
+
+.cancel-button:hover {
+  background: #f9fafb;
+}
+
+.remove-button {
+  height: 36px;
+  background: #030213;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  min-width: 88.172px;
+}
+
+.remove-button:hover {
+  opacity: 0.9;
+}
+
+.remove-button:active {
+  opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .confirm-modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .confirm-modal-footer {
+    flex-direction: column;
+  }
+
+  .cancel-button,
+  .remove-button {
+    width: 100%;
+  }
+}
+
