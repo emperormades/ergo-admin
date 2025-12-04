@@ -5,6 +5,7 @@ import RequestSent from './components/RequestSent'
 import Dashboard from './components/Dashboard'
 import Users from './components/Users'
 import EditUser from './components/EditUser'
+import Finance from './components/Finance'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/usuarios" element={<Users />} />
         <Route path="/usuarios/editar/:id" element={<EditUser />} />
+        <Route path="/financeiro" element={<Finance />} />
       </Routes>
     </BrowserRouter>
   )

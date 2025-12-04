@@ -27,6 +27,8 @@
   flex-direction: column;
   gap: 4px;
   padding: 16px;
+  height: calc(100vh - 64px);
+  box-sizing: border-box;
 }
 
 .nav-button {
@@ -53,6 +55,17 @@
   width: 16px;
   height: 16px;
   flex-shrink: 0;
+}
+
+.logout-button {
+  margin-top: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 8px;
+}
+
+.logout-button:hover {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
 }
 
 /* Navbar */

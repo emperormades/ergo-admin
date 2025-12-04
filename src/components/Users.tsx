@@ -211,13 +211,21 @@ export default function Users() {
             <img src={imgIcon10} alt="" className="nav-icon" />
             <span>Usuários</span>
           </div>
-          <div className="nav-button">
+          <div className="nav-button" onClick={() => navigate('/financeiro')}>
             <img src={imgIcon11} alt="" className="nav-icon" />
             <span>Financeiro</span>
           </div>
           <div className="nav-button">
             <img src={imgIcon12} alt="" className="nav-icon" />
             <span>Configurações</span>
+          </div>
+          <div className="nav-button logout-button" onClick={() => navigate('/')}>
+            <svg className="nav-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 14H3C2.46957 14 1.96086 13.7893 1.58579 13.4142C1.21071 13.0391 1 12.5304 1 12V4C1 3.46957 1.21071 2.96086 1.58579 2.58579C1.96086 2.21071 2.46957 2 3 2H6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M11 11L15 8L11 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M15 8H6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span>Sair</span>
           </div>
         </div>
       </div>
