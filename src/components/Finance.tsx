@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Finance.css'
+import PaymentLinkModal from './PaymentLinkModal'
 
 // Image assets from Figma
 const imgImageErgo360 = "https://www.figma.com/api/mcp/asset/8a0a9ebd-6ff4-47e4-abd0-d7e75778451d"
@@ -38,6 +40,7 @@ interface Charge {
 
 export default function Finance() {
   const navigate = useNavigate()
+  const [isPaymentLinkModalOpen, setIsPaymentLinkModalOpen] = useState(false)
 
   const charges: Charge[] = [
     {
@@ -320,7 +323,10 @@ export default function Finance() {
               <img src={imgIcon3} alt="" />
               Baixar CSV
             </button>
-            <button className="generate-link-button">
+            <button
+              className="generate-link-button"
+              onClick={() => setIsPaymentLinkModalOpen(true)}
+            >
               <img src={imgIcon4} alt="" />
               Gerar link de cobrança
             </button>
@@ -380,6 +386,12 @@ export default function Finance() {
           </table>
         </div>
       </div>
+
+      {/* Payment Link Modal */}
+      <PaymentLinkModal
+        isOpen={isPaymentLinkModalOpen}
+        onClose={() => setIsPaymentLinkModalOpen(false)}
+      />
     </div>
   )
 }
