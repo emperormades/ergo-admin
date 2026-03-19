@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
+import imgLogo from '../../images/logo.png'
+import imgVector from '../../images/password.svg'
 
 // Image assets from Figma
-const imgLogo = "https://www.figma.com/api/mcp/asset/d1804ed4-4f21-46db-806f-0909cc84a943"
-const imgVector = "https://www.figma.com/api/mcp/asset/52cf41b5-877e-43eb-b152-55a7ce342ca8"
 const imgVector1 = "https://www.figma.com/api/mcp/asset/e314bf99-6f1e-4f63-8831-06aa04db624b"
 
 export default function Login() {

@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './PasswordRecovery.css'
+import imgLogo from '../../images/logo.png'
 
 // Image assets from Figma
-const imgLogo = "https://www.figma.com/api/mcp/asset/bb5f27b6-6888-46ae-9d22-232a0c260aeb"
 
 export default function PasswordRecovery() {
   const [email, setEmail] = useState('')
@@ -69,9 +69,6 @@ export default function PasswordRecovery() {
                   Voltar para o login
                 </button>
               </form>
-            </div>
-            <div className="password-recovery-footer">
-              <p>Protótipo — navegação simulada</p>
             </div>
           </div>
         </div>

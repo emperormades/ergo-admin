@@ -4,9 +4,9 @@ import './Dashboard.css'
 import LineChart from './LineChart'
 import BarChart from './BarChart'
 import AddPackageModal from './AddPackageModal'
+import imgImageErgo360 from '../../images/logo_interno.png'
 
 // Image assets from Figma
-const imgImageErgo360 = "https://www.figma.com/api/mcp/asset/de67e916-e198-45a5-8d16-4a5db4716304"
 const imgIcon3 = "https://www.figma.com/api/mcp/asset/351e2790-9982-4b4d-8515-5a946cfc1402"
 const imgIcon4 = "https://www.figma.com/api/mcp/asset/079868c4-e078-44d3-ab6e-f69221d81b82"
 const imgIcon5 = "https://www.figma.com/api/mcp/asset/fb00cd98-3c4f-4abb-bed5-3be9d959ef4c"
