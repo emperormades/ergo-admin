@@ -2,9 +2,13 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Finance.css'
 import PaymentLinkModal from './PaymentLinkModal'
+import imgImageErgo360 from '../../images/logo_interno.png'
+import imgIcon11 from '../../images/lupa.svg'
+import imgIcon10 from '../../images/calendario.svg'
+import imgIcon2 from '../../images/seta_baixo.svg'
+import imgIcon12 from '../../images/pessoa.svg'
 
 // Image assets from Figma
-const imgImageErgo360 = "https://www.figma.com/api/mcp/asset/8a0a9ebd-6ff4-47e4-abd0-d7e75778451d"
 const imgVector = "https://www.figma.com/api/mcp/asset/6c4a7113-65ea-4b93-9083-706b6e8fea14"
 const imgVector1 = "https://www.figma.com/api/mcp/asset/bcee4747-2231-489f-a579-4766c05be084"
 const imgIcon = "https://www.figma.com/api/mcp/asset/d00247be-9a97-4bce-ba9a-777b9a396306"
@@ -14,7 +18,6 @@ const imgVector3 = "https://www.figma.com/api/mcp/asset/14663b83-8fc6-4f78-b030-
 const imgVector4 = "https://www.figma.com/api/mcp/asset/cba9b76c-7300-44f6-8288-111da15bfb1c"
 const imgVector5 = "https://www.figma.com/api/mcp/asset/fe135c4e-2f5b-4596-a598-a490076c28ab"
 const imgVector6 = "https://www.figma.com/api/mcp/asset/e342dd02-48e1-4579-99a0-6f1b093c941e"
-const imgIcon2 = "https://www.figma.com/api/mcp/asset/978037bc-d475-4d87-af13-c296a6451567"
 const imgIcon3 = "https://www.figma.com/api/mcp/asset/7f486e29-6ff0-48eb-8c62-26412e18a1da"
 const imgIcon4 = "https://www.figma.com/api/mcp/asset/3114de36-ad34-4857-a1e0-4e1e830d1a57"
 const imgIcon5 = "https://www.figma.com/api/mcp/asset/0c55e3ee-5f96-4e67-97ad-cd54f69bc0e2"
@@ -22,9 +25,6 @@ const imgIcon6 = "https://www.figma.com/api/mcp/asset/33bda385-a7d5-4d4f-a8d8-ca
 const imgIcon7 = "https://www.figma.com/api/mcp/asset/c72b947c-16db-4b2f-ad6f-774ba5f96c42"
 const imgIcon8 = "https://www.figma.com/api/mcp/asset/03979208-2ad1-4456-92fd-29251f914272"
 const imgIcon9 = "https://www.figma.com/api/mcp/asset/51aba376-635b-4837-aa79-cb9b943af0ee"
-const imgIcon10 = "https://www.figma.com/api/mcp/asset/151b24aa-1100-42ab-9831-155e6ee8a26e"
-const imgIcon11 = "https://www.figma.com/api/mcp/asset/b522a786-c1c2-45cd-92ec-a24d3fd1b0c9"
-const imgIcon12 = "https://www.figma.com/api/mcp/asset/bb0f44e4-b4ea-4d07-8f2f-90ab7665338a"
 
 interface Charge {
   id: string

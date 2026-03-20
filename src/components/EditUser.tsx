@@ -2,19 +2,19 @@ import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './EditUser.css'
 import ConfirmDeleteModal from './ConfirmDeleteModal'
+import imgImageErgo360 from '../../images/logo_interno.png'
+import imgIcon8 from '../../images/lupa.svg'
+import imgIcon7 from '../../images/calendario.svg'
+import imgIcon2 from '../../images/seta_baixo.svg'
+import imgIcon9 from '../../images/pessoa.svg'
+import imgIcon from '../../images/voltar.svg'
+import imgIcon3 from '../../images/dashboard.svg'
+import imgIcon4 from '../../images/usuarios.svg'
+import imgIcon5 from '../../images/financeiro.svg'
+import imgIcon6 from '../../images/configuracoes.svg'
 
 // Image assets from Figma
-const imgImageErgo360 = "https://www.figma.com/api/mcp/asset/9e49d523-2454-4979-9cbe-3cc8aa89efa3"
-const imgIcon = "https://www.figma.com/api/mcp/asset/f0379232-868d-4d50-bc01-9eddf179bcd7"
 const imgIcon1 = "https://www.figma.com/api/mcp/asset/80d311a9-5df6-4059-98f9-3a9052908769"
-const imgIcon2 = "https://www.figma.com/api/mcp/asset/d875e4a9-2c80-414f-83d6-ca58a6ac918a"
-const imgIcon3 = "https://www.figma.com/api/mcp/asset/20325668-a70e-4519-8ad4-e35ef3c44c09"
-const imgIcon4 = "https://www.figma.com/api/mcp/asset/6e31ba10-4fa7-4edb-8a2c-046996c91056"
-const imgIcon5 = "https://www.figma.com/api/mcp/asset/7cea5efc-827e-484c-8293-be7ad1d53e1c"
-const imgIcon6 = "https://www.figma.com/api/mcp/asset/7a8ff2eb-420b-4afb-b852-265e742e4e6c"
-const imgIcon7 = "https://www.figma.com/api/mcp/asset/1900fa1d-728b-4bad-8912-0ed442246af9"
-const imgIcon8 = "https://www.figma.com/api/mcp/asset/731844f4-99c9-4eff-8a89-0251757b701e"
-const imgIcon9 = "https://www.figma.com/api/mcp/asset/38d1671d-9962-4148-b93c-3eb2cf2f4819"
 
 // Mock data for different users
 const mockUsers = {
