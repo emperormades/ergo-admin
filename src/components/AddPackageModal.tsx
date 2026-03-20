@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './AddPackageModal.css'
+import imgIcon from '../../images/fechar.svg'
 
 // Image assets from Figma
-const imgIcon = "https://www.figma.com/api/mcp/asset/9b0628b3-2358-40c4-a70e-42b19c7d6eab"
 
 interface AddPackageModalProps {
   isOpen: boolean

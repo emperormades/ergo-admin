@@ -7,24 +7,20 @@ import imgIcon11 from '../../images/lupa.svg'
 import imgIcon10 from '../../images/calendario.svg'
 import imgIcon2 from '../../images/seta_baixo.svg'
 import imgIcon12 from '../../images/pessoa.svg'
+import imgIcon6 from '../../images/dashboard.svg'
+import imgIcon7 from '../../images/usuarios.svg'
+import imgIcon8 from '../../images/financeiro.svg'
+import imgIcon9 from '../../images/configuracoes.svg'
+import imgVector1 from '../../images/tendencia.svg'
+import imgVector6 from '../../images/receitas.svg'
+import imgVector3 from '../../images/dinheiro.svg'
+import imgIcon1 from '../../images/info.svg'
+import imgIcon from '../../images/seta_cima_verde.svg'
+import imgIcon3 from '../../images/download.svg'
+import imgIcon4 from '../../images/corrente_branca.svg'
+import imgIcon5 from '../../images/vision.svg'
 
 // Image assets from Figma
-const imgVector = "https://www.figma.com/api/mcp/asset/6c4a7113-65ea-4b93-9083-706b6e8fea14"
-const imgVector1 = "https://www.figma.com/api/mcp/asset/bcee4747-2231-489f-a579-4766c05be084"
-const imgIcon = "https://www.figma.com/api/mcp/asset/d00247be-9a97-4bce-ba9a-777b9a396306"
-const imgIcon1 = "https://www.figma.com/api/mcp/asset/e5a843dd-92f4-4c1c-ad34-3dc170d3728f"
-const imgVector2 = "https://www.figma.com/api/mcp/asset/a873c6b4-00d4-420b-87da-ef9f970df58a"
-const imgVector3 = "https://www.figma.com/api/mcp/asset/14663b83-8fc6-4f78-b030-c50b2f1b1999"
-const imgVector4 = "https://www.figma.com/api/mcp/asset/cba9b76c-7300-44f6-8288-111da15bfb1c"
-const imgVector5 = "https://www.figma.com/api/mcp/asset/fe135c4e-2f5b-4596-a598-a490076c28ab"
-const imgVector6 = "https://www.figma.com/api/mcp/asset/e342dd02-48e1-4579-99a0-6f1b093c941e"
-const imgIcon3 = "https://www.figma.com/api/mcp/asset/7f486e29-6ff0-48eb-8c62-26412e18a1da"
-const imgIcon4 = "https://www.figma.com/api/mcp/asset/3114de36-ad34-4857-a1e0-4e1e830d1a57"
-const imgIcon5 = "https://www.figma.com/api/mcp/asset/0c55e3ee-5f96-4e67-97ad-cd54f69bc0e2"
-const imgIcon6 = "https://www.figma.com/api/mcp/asset/33bda385-a7d5-4d4f-a8d8-cac32f0fe385"
-const imgIcon7 = "https://www.figma.com/api/mcp/asset/c72b947c-16db-4b2f-ad6f-774ba5f96c42"
-const imgIcon8 = "https://www.figma.com/api/mcp/asset/03979208-2ad1-4456-92fd-29251f914272"
-const imgIcon9 = "https://www.figma.com/api/mcp/asset/51aba376-635b-4837-aa79-cb9b943af0ee"
 
 interface Charge {
   id: string
@@ -215,7 +211,6 @@ export default function Finance() {
               <span>Novas assinaturas</span>
               <div className="kpi-icon-bg">
                 <div className="kpi-icon">
-                  <img src={imgVector} alt="" className="kpi-icon-img" />
                   <img src={imgVector1} alt="" className="kpi-icon-img" />
                 </div>
               </div>
@@ -238,7 +233,6 @@ export default function Finance() {
               <span>Base atual / ARR</span>
               <div className="kpi-icon-bg">
                 <div className="kpi-icon">
-                  <img src={imgVector2} alt="" className="kpi-icon-img" />
                   <img src={imgVector3} alt="" className="kpi-icon-img" />
                 </div>
               </div>
@@ -261,8 +255,6 @@ export default function Finance() {
               <span>Receitas laudos extras</span>
               <div className="kpi-icon-bg">
                 <div className="kpi-icon">
-                  <img src={imgVector4} alt="" className="kpi-icon-img" />
-                  <img src={imgVector5} alt="" className="kpi-icon-img" />
                   <img src={imgVector6} alt="" className="kpi-icon-img" />
                 </div>
               </div>
@@ -285,7 +277,6 @@ export default function Finance() {
               <span>Conversão - Laudos</span>
               <div className="kpi-icon-bg">
                 <div className="kpi-icon">
-                  <img src={imgVector} alt="" className="kpi-icon-img" />
                   <img src={imgVector1} alt="" className="kpi-icon-img" />
                 </div>
               </div>
