@@ -3,25 +3,25 @@ import { useNavigate } from 'react-router-dom'
 import './Users.css'
 import AddPackageModal from './AddPackageModal'
 import ConfirmDeleteModal from './ConfirmDeleteModal'
+import imgImageErgo360 from '../../images/logo_interno.png'
+import imgIcon14 from '../../images/lupa.svg'
+import imgIcon13 from '../../images/calendario.svg'
+import imgIcon3 from '../../images/seta_baixo.svg'
+import imgIcon15 from '../../images/pessoa.svg'
+import imgIcon9 from '../../images/dashboard.svg'
+import imgIcon10 from '../../images/usuarios.svg'
+import imgIcon11 from '../../images/financeiro.svg'
+import imgIcon12 from '../../images/configuracoes.svg'
+import imgIcon from '../../images/download.svg'
+import imgIcon1 from '../../images/adicionar.svg'
+import imgIcon4 from '../../images/setas.svg'
+import imgIcon5 from '../../images/pacote.svg'
+import imgIcon6 from '../../images/configuracoes.svg'
+import imgIcon7 from '../../images/lixo.svg'
 
 // Image assets from Figma
-const imgImageErgo360 = "https://www.figma.com/api/mcp/asset/0f731cc3-e2b7-4a9c-bc2b-8fc879ff0d6b"
-const imgIcon = "https://www.figma.com/api/mcp/asset/b40514f3-c34f-42c0-a986-54208dd54967"
-const imgIcon1 = "https://www.figma.com/api/mcp/asset/c42b510c-0347-4f6a-9253-daebf43fe941"
-const imgIcon2 = "https://www.figma.com/api/mcp/asset/e436e54c-c998-40cf-9598-d8e312c4f1a5"
-const imgIcon3 = "https://www.figma.com/api/mcp/asset/789c4ab8-9acc-4f66-bd8e-c9b8265aef1f"
-const imgIcon4 = "https://www.figma.com/api/mcp/asset/1790ac06-2bc7-4668-8d79-516a740d23bd"
-const imgIcon5 = "https://www.figma.com/api/mcp/asset/6b61d0e9-b4fb-4c72-a8f1-1a1faebc84a8"
-const imgIcon6 = "https://www.figma.com/api/mcp/asset/b4371036-4394-4b02-a61a-184ad7226151"
-const imgIcon7 = "https://www.figma.com/api/mcp/asset/b8fe03e6-d27a-4071-b49c-bc0a72b36a84"
+const imgIcon2 = imgIcon14
 const imgIcon8 = "https://www.figma.com/api/mcp/asset/8e3f90ed-36b1-49b9-9e04-7ba82998d3c0"
-const imgIcon9 = "https://www.figma.com/api/mcp/asset/dbc6b38d-be17-4c54-916a-6f6689aaebac"
-const imgIcon10 = "https://www.figma.com/api/mcp/asset/f9d2f1b9-6e8a-4343-871d-7ad46fbe2fa8"
-const imgIcon11 = "https://www.figma.com/api/mcp/asset/7c16f120-46f7-4e3d-bcbc-45504b1d870c"
-const imgIcon12 = "https://www.figma.com/api/mcp/asset/1bee1bdd-f407-489c-9ba8-7fd5463c8039"
-const imgIcon13 = "https://www.figma.com/api/mcp/asset/fb85fd14-79cf-4073-8fea-3dee81a88721"
-const imgIcon14 = "https://www.figma.com/api/mcp/asset/3c38ae35-c99b-4335-ac1d-ffbd4b4e9bf2"
-const imgIcon15 = "https://www.figma.com/api/mcp/asset/5b4d1876-b0f4-4fc3-b284-060c3c5b5861"
 
 interface User {
   id: number
