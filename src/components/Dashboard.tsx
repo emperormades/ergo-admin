@@ -5,19 +5,19 @@ import LineChart from './LineChart'
 import BarChart from './BarChart'
 import AddPackageModal from './AddPackageModal'
 import imgImageErgo360 from '../../images/logo_interno.png'
+import imgIcon3 from '../../images/dashboard.svg'
+import imgIcon4 from '../../images/usuarios.svg'
+import imgIcon5 from '../../images/financeiro.svg'
+import imgIcon6 from '../../images/configuracoes.svg'
+import imgIcon from '../../images/pacote.svg'
+import imgIcon1 from '../../images/corrente.svg'
+import imgIcon2 from '../../images/corrente.svg'
+import imgIcon9 from '../../images/lupa.svg'
+import imgIcon7 from '../../images/calendario.svg'
+import imgIcon8 from '../../images/seta_baixo.svg'
+import imgIcon10 from '../../images/pessoa.svg'
 
 // Image assets from Figma
-const imgIcon3 = "https://www.figma.com/api/mcp/asset/351e2790-9982-4b4d-8515-5a946cfc1402"
-const imgIcon4 = "https://www.figma.com/api/mcp/asset/079868c4-e078-44d3-ab6e-f69221d81b82"
-const imgIcon5 = "https://www.figma.com/api/mcp/asset/fb00cd98-3c4f-4abb-bed5-3be9d959ef4c"
-const imgIcon6 = "https://www.figma.com/api/mcp/asset/6d6bd0c7-c9f2-45a4-a1e9-e1e1df49e4b9"
-const imgIcon7 = "https://www.figma.com/api/mcp/asset/4908571e-cfae-4525-91bc-89debb40b58c"
-const imgIcon8 = "https://www.figma.com/api/mcp/asset/0a03b3ef-b623-400c-81c4-29a542afc8c2"
-const imgIcon9 = "https://www.figma.com/api/mcp/asset/0159a722-9416-49e7-ab9a-28c4ff1b5e3d"
-const imgIcon10 = "https://www.figma.com/api/mcp/asset/09398813-e452-4d3e-9600-07977e102d2b"
-const imgIcon = "https://www.figma.com/api/mcp/asset/696b868c-fbfa-4e73-a3c9-61ed08a57153"
-const imgIcon1 = "https://www.figma.com/api/mcp/asset/4faad7d1-3306-4e2e-a6b8-3bc14e0d636b"
-const imgIcon2 = "https://www.figma.com/api/mcp/asset/520123fa-0270-4b74-a1de-91e7702cc1e9"
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<'Empresa' | 'Autônomo'>('Empresa')
