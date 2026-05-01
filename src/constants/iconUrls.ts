@@ -42,6 +42,18 @@ const DASHBOARD_PACOTE_URL =
 const DASHBOARD_GERAR_LINK_URL =
   'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/gerar_link.svg'
 
+const DASHBOARD_RECEITA_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/receita.svg'
+
+const DASHBOARD_LAUDOS_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/laudos.svg'
+
+const DASHBOARD_USUARIOS_ATIVOS_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/usuarios_ativos.svg'
+
+const DASHBOARD_ALTA_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/UpArrowIcon.svg'
+
 export const iconUrls = {
   logoInterno: PLACEHOLDER,
   /** Logo da navbar (Dashboard e demais telas que usem menu/logo.svg). */
@@ -69,14 +81,20 @@ export const iconUrls = {
   pacote: DASHBOARD_PACOTE_URL,
   /** Ícone “Gerar link” (tabela Renovações). */
   gerarLink: DASHBOARD_GERAR_LINK_URL,
+  /** Ícone KPI Laudos (dashboard). */
+  laudos: DASHBOARD_LAUDOS_URL,
   lixo: PLACEHOLDER,
   tendencia: PLACEHOLDER,
-  receitas: PLACEHOLDER,
+  /** KPI receita / laudos extras (dashboard e telas monetárias). */
+  receitas: DASHBOARD_RECEITA_URL,
   dinheiro: PLACEHOLDER,
   info: PLACEHOLDER,
-  setaCimaVerde: PLACEHOLDER,
+  /** Variação positiva em KPIs (UpArrowIcon.svg; dashboard / financeiro). */
+  setaCimaVerde: DASHBOARD_ALTA_URL,
   correnteBranca: PLACEHOLDER,
   vision: PLACEHOLDER,
+  /** Ícone KPI Usuários ativos (dashboard). */
+  usuariosAtivos: DASHBOARD_USUARIOS_ATIVOS_URL,
   voltar: PLACEHOLDER,
   corrente: PLACEHOLDER,
   fechar: PLACEHOLDER,

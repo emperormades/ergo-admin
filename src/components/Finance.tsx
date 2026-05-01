@@ -5,7 +5,7 @@ import PaymentLinkModal from './PaymentLinkModal'
 import LogoutSidebarButton from './LogoutSidebarButton'
 import { iconUrls } from '../constants/iconUrls'
 
-const imgImageErgo360 = iconUrls.logoInterno
+const imgImageErgo360 = iconUrls.logoMenu
 const imgIcon11 = iconUrls.lupa
 const imgIcon10 = iconUrls.calendario
 const imgIcon2 = iconUrls.setaBaixo

@@ -5,7 +5,7 @@ import ConfirmDeleteModal from './ConfirmDeleteModal'
 import LogoutSidebarButton from './LogoutSidebarButton'
 import { iconUrls } from '../constants/iconUrls'
 
-const imgImageErgo360 = iconUrls.logoInterno
+const imgImageErgo360 = iconUrls.logoMenu
 const imgIcon8 = iconUrls.lupa
 const imgIcon7 = iconUrls.calendario
 const imgIcon2 = iconUrls.setaBaixo

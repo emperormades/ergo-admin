@@ -20,6 +20,11 @@ const imgIcon7 = iconUrls.calendario
 const imgIcon8 = iconUrls.setaBaixo
 const imgIcon10 = iconUrls.pessoa
 
+const imgKpiReceita = iconUrls.receitas
+const imgKpiLaudos = iconUrls.laudos
+const imgKpiUsuariosAtivos = iconUrls.usuariosAtivos
+const imgTrendAlta = iconUrls.setaCimaVerde
+
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<'Empresa' | 'Autônomo'>('Empresa')
   const navigate = useNavigate()
@@ -158,13 +163,15 @@ export default function Dashboard() {
             <div className="kpi-header">
               <span>Laudos (30 dias)</span>
               <div className="kpi-icon-bg">
-                <div className="kpi-icon">📄</div>
+                <div className="kpi-icon">
+                  <img src={imgKpiLaudos} alt="" className="kpi-icon-img" />
+                </div>
               </div>
             </div>
             <div className="kpi-value">365</div>
             <div className="kpi-footer">
               <div className="kpi-trend">
-                <span className="trend-up">↑</span>
+                <img src={imgTrendAlta} alt="" className="trend-up" />
                 <span className="trend-positive">18.5%</span>
               </div>
               <span className="kpi-period">Últimos 30 dias</span>
@@ -175,13 +182,15 @@ export default function Dashboard() {
             <div className="kpi-header">
               <span>Usuários ativos (30 dias)</span>
               <div className="kpi-icon-bg">
-                <div className="kpi-icon">👥</div>
+                <div className="kpi-icon">
+                  <img src={imgKpiUsuariosAtivos} alt="" className="kpi-icon-img" />
+                </div>
               </div>
             </div>
             <div className="kpi-value">11</div>
             <div className="kpi-footer">
               <div className="kpi-trend">
-                <span className="trend-up">↑</span>
+                <img src={imgTrendAlta} alt="" className="trend-up" />
                 <span className="trend-positive">12.5%</span>
               </div>
               <span className="kpi-period">Últimos 30 dias</span>
@@ -203,13 +212,15 @@ export default function Dashboard() {
             <div className="kpi-header">
               <span>Receita de laudos extras (30 dias)</span>
               <div className="kpi-icon-bg">
-                <div className="kpi-icon">💰</div>
+                <div className="kpi-icon">
+                  <img src={imgKpiReceita} alt="" className="kpi-icon-img" />
+                </div>
               </div>
             </div>
             <div className="kpi-value">R$ 2.390</div>
             <div className="kpi-footer">
               <div className="kpi-trend">
-                <span className="trend-up">↑</span>
+                <img src={imgTrendAlta} alt="" className="trend-up" />
                 <span className="trend-positive">22.7%</span>
               </div>
               <span className="kpi-period">Últimos 30 dias</span>
