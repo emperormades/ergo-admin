@@ -7,84 +7,6 @@
   overflow-x: hidden;
 }
 
-/* Sidebar */
-.finance-sidebar {
-  width: 256px;
-  min-height: 100vh;
-  height: 100%;
-  background: white;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  position: fixed;
-  left: 0;
-  top: 0;
-  padding-top: 64px;
-  box-sizing: border-box;
-  overflow-y: auto;
-}
-
-.sidebar-navigation {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 16px;
-  height: calc(100vh - 64px);
-  box-sizing: border-box;
-}
-
-.sidebar-navigation::after {
-  content: '';
-  flex: 1;
-  min-height: 0;
-}
-
-.nav-button {
-  height: 36px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 0 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #0a0a0a;
-  background: transparent;
-  border: none;
-}
-
-.sidebar-navigation button.nav-button {
-  text-align: left;
-  appearance: none;
-  font: inherit;
-  width: 100%;
-  margin: 0;
-}
-
-.nav-button:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-.nav-button.active {
-  background: #eceef2;
-  color: #030213;
-}
-
-.nav-icon {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-}
-
-.nav-button.nav-button-logout {
-  margin-top: auto;
-  color: #dc2626;
-}
-
-.nav-button.nav-button-logout:hover {
-  background: #fee2e2;
-  color: #991b1b;
-}
 
 /* Navbar */
 .finance-navbar {
@@ -204,10 +126,10 @@
 
 /* Main Content */
 .finance-main {
-  margin-left: 256px;
+  margin-left: var(--admin-sidebar-width);
   margin-top: 65px;
   padding: 48px 32px 24px 32px;
-  width: calc(100% - 256px);
+  width: calc(100% - var(--admin-sidebar-width));
   min-height: calc(100vh - 65px);
   background: white;
   box-sizing: border-box;
@@ -617,11 +539,6 @@
 }
 
 @media (max-width: 768px) {
-  .finance-sidebar {
-    transform: translateX(-100%);
-    transition: transform 0.3s;
-  }
-
   .finance-main {
     margin-left: 0;
     padding: 48px 16px 24px 16px;

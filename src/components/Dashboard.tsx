@@ -1,17 +1,12 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import './Dashboard.css'
 import LineChart from './LineChart'
 import BarChart from './BarChart'
 import AddPackageModal from './AddPackageModal'
-import LogoutSidebarButton from './LogoutSidebarButton'
+import AdminSidebar from './AdminSidebar'
 import { iconUrls } from '../constants/iconUrls'
 
 const imgImageErgo360 = iconUrls.logoMenu
-const imgIcon3 = iconUrls.dashboard
-const imgIcon4 = iconUrls.usuarios
-const imgIcon5 = iconUrls.financeiro
-const imgIcon6 = iconUrls.configuracoes
 const imgIcon = iconUrls.pacote
 const imgIcon1 = iconUrls.gerarLink
 const imgIcon2 = iconUrls.gerarLink
@@ -27,7 +22,6 @@ const imgTrendAlta = iconUrls.setaCimaVerde
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<'Empresa' | 'Autônomo'>('Empresa')
-  const navigate = useNavigate()
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedUserId, setSelectedUserId] = useState<string | null>(null)
 
@@ -104,28 +98,7 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard-container">
-      {/* Sidebar */}
-      <div className="dashboard-sidebar">
-        <div className="sidebar-navigation">
-          <div className="nav-button active">
-            <img src={imgIcon3} alt="" className="nav-icon" />
-            <span>Dashboard</span>
-          </div>
-          <div className="nav-button" onClick={() => navigate('/usuarios')}>
-            <img src={imgIcon4} alt="" className="nav-icon" />
-            <span>Usuários</span>
-          </div>
-          <div className="nav-button" onClick={() => navigate('/financeiro')}>
-            <img src={imgIcon5} alt="" className="nav-icon" />
-            <span>Financeiro</span>
-          </div>
-          <div className="nav-button">
-            <img src={imgIcon6} alt="" className="nav-icon" />
-            <span>Configurações</span>
-          </div>
-          <LogoutSidebarButton />
-        </div>
-      </div>
+      <AdminSidebar />
 
       {/* Navbar */}
       <div className="dashboard-navbar">

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './EditUser.css'
 import ConfirmDeleteModal from './ConfirmDeleteModal'
-import LogoutSidebarButton from './LogoutSidebarButton'
+import AdminSidebar from './AdminSidebar'
 import { iconUrls } from '../constants/iconUrls'
 
 const imgImageErgo360 = iconUrls.logoMenu
@@ -11,11 +11,6 @@ const imgIcon7 = iconUrls.calendario
 const imgIcon2 = iconUrls.setaBaixo
 const imgIcon9 = iconUrls.pessoa
 const imgIcon = iconUrls.voltar
-const imgIcon3 = iconUrls.dashboard
-const imgIcon4 = iconUrls.usuarios
-const imgIcon5 = iconUrls.financeiro
-const imgIcon6 = iconUrls.configuracoes
-
 // Mock data for different users
 const mockUsers = {
   '1': {
@@ -132,29 +127,7 @@ export default function EditUser() {
 
   return (
     <div className="edit-user-container">
-      {/* Sidebar */}
-      <div className="edit-user-sidebar">
-        <div className="sidebar-navigation">
-          <div className="nav-button" onClick={() => navigate('/dashboard')}>
-            <img src={imgIcon3} alt="" className="nav-icon" />
-            <span>Dashboard</span>
-          </div>
-          <div className="nav-button" onClick={() => navigate('/usuarios')}>
-            <img src={imgIcon4} alt="" className="nav-icon" />
-            <span>Usuários</span>
-          </div>
-          <div className="nav-button" onClick={() => navigate('/financeiro')}>
-            <img src={imgIcon5} alt="" className="nav-icon" />
-            <span>Financeiro</span>
-          </div>
-          <div className="nav-button">
-            <img src={imgIcon6} alt="" className="nav-icon" />
-            <span>Configurações</span>
-          </div>
-          <LogoutSidebarButton />
-        </div>
-      </div>
-
+      <AdminSidebar />
       {/* Navbar */}
       <div className="edit-user-navbar">
         <div className="navbar-content">

@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import './Finance.css'
 import PaymentLinkModal from './PaymentLinkModal'
-import LogoutSidebarButton from './LogoutSidebarButton'
+import AdminSidebar from './AdminSidebar'
 import { iconUrls } from '../constants/iconUrls'
 
 const imgImageErgo360 = iconUrls.logoMenu
@@ -10,10 +9,6 @@ const imgIcon11 = iconUrls.lupa
 const imgIcon10 = iconUrls.calendario
 const imgIcon2 = iconUrls.setaBaixo
 const imgIcon12 = iconUrls.pessoa
-const imgIcon6 = iconUrls.dashboard
-const imgIcon7 = iconUrls.usuarios
-const imgIcon8 = iconUrls.financeiro
-const imgIcon9 = iconUrls.configuracoes
 const imgVector1 = iconUrls.tendencia
 const imgVector6 = iconUrls.receitas
 const imgVector3 = iconUrls.dinheiro
@@ -36,7 +31,6 @@ interface Charge {
 }
 
 export default function Finance() {
-  const navigate = useNavigate()
   const [isPaymentLinkModalOpen, setIsPaymentLinkModalOpen] = useState(false)
 
   const charges: Charge[] = [
@@ -145,29 +139,7 @@ export default function Finance() {
 
   return (
     <div className="finance-container">
-      {/* Sidebar */}
-      <div className="finance-sidebar">
-        <div className="sidebar-navigation">
-          <div className="nav-button" onClick={() => navigate('/dashboard')}>
-            <img src={imgIcon6} alt="" className="nav-icon" />
-            <span>Dashboard</span>
-          </div>
-          <div className="nav-button" onClick={() => navigate('/usuarios')}>
-            <img src={imgIcon7} alt="" className="nav-icon" />
-            <span>Usuários</span>
-          </div>
-          <div className="nav-button active">
-            <img src={imgIcon8} alt="" className="nav-icon" />
-            <span>Financeiro</span>
-          </div>
-          <div className="nav-button">
-            <img src={imgIcon9} alt="" className="nav-icon" />
-            <span>Configurações</span>
-          </div>
-          <LogoutSidebarButton />
-        </div>
-      </div>
-
+      <AdminSidebar />
       {/* Navbar */}
       <div className="finance-navbar">
         <div className="navbar-content">

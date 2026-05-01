@@ -54,6 +54,18 @@ const DASHBOARD_USUARIOS_ATIVOS_URL =
 const DASHBOARD_ALTA_URL =
   'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/UpArrowIcon.svg'
 
+const DASHBOARD_BAIXAR_CSV_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/baixar_csv.svg'
+
+const DASHBOARD_NOVO_USUARIO_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/novo_usuario.svg'
+
+const DASHBOARD_DUAS_SETAS_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/duas_setas.svg'
+
+const DASHBOARD_APAGAR_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/apagar.svg'
+
 export const iconUrls = {
   logoInterno: PLACEHOLDER,
   /** Logo da navbar (Dashboard e demais telas que usem menu/logo.svg). */
@@ -74,16 +86,20 @@ export const iconUrls = {
   financeiro: MENU_MONEY_URL,
   /** Ícone item menu Configurações na sidebar. */
   configuracoes: MENU_CONFIGURACOES_URL,
-  download: PLACEHOLDER,
-  adicionar: PLACEHOLDER,
-  setas: PLACEHOLDER,
+  /** Exportar / baixar CSV (usuários, financeiro). */
+  download: DASHBOARD_BAIXAR_CSV_URL,
+  /** Botão novo usuário (lista de usuários). */
+  adicionar: DASHBOARD_NOVO_USUARIO_URL,
+  /** Cabeçalhos ordenáveis (setas ↑↓) na tabela de usuários. */
+  setas: DASHBOARD_DUAS_SETAS_URL,
   /** Ícone “Adicionar pacote” nas tabelas do dashboard. */
   pacote: DASHBOARD_PACOTE_URL,
   /** Ícone “Gerar link” (tabela Renovações). */
   gerarLink: DASHBOARD_GERAR_LINK_URL,
   /** Ícone KPI Laudos (dashboard). */
   laudos: DASHBOARD_LAUDOS_URL,
-  lixo: PLACEHOLDER,
+  /** Apagar / lixeira na tabela de usuários. */
+  lixo: DASHBOARD_APAGAR_URL,
   tendencia: PLACEHOLDER,
   /** KPI receita / laudos extras (dashboard e telas monetárias). */
   receitas: DASHBOARD_RECEITA_URL,

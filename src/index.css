@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --admin-navbar-height: 65px;
+  --admin-sidebar-expanded: 256px;
+  --admin-sidebar-collapsed: 72px;
+  --admin-sidebar-width: var(--admin-sidebar-expanded);
+}
+
+html.admin-sidebar-collapsed {
+  --admin-sidebar-width: var(--admin-sidebar-collapsed);
+}
 html, body {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

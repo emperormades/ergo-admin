@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import './Users.css'
 import AddPackageModal from './AddPackageModal'
 import ConfirmDeleteModal from './ConfirmDeleteModal'
-import LogoutSidebarButton from './LogoutSidebarButton'
+import AdminSidebar from './AdminSidebar'
 import { iconUrls } from '../constants/iconUrls'
 
 const imgImageErgo360 = iconUrls.logoMenu
@@ -11,10 +11,6 @@ const imgIcon14 = iconUrls.lupa
 const imgIcon13 = iconUrls.calendario
 const imgIcon3 = iconUrls.setaBaixo
 const imgIcon15 = iconUrls.pessoa
-const imgIcon9 = iconUrls.dashboard
-const imgIcon10 = iconUrls.usuarios
-const imgIcon11 = iconUrls.financeiro
-const imgIcon12 = iconUrls.configuracoes
 const imgIcon = iconUrls.download
 const imgIcon1 = iconUrls.adicionar
 const imgIcon4 = iconUrls.setas
@@ -200,28 +196,7 @@ export default function Users() {
 
   return (
     <div className="users-container">
-      {/* Sidebar */}
-      <div className="users-sidebar">
-        <div className="sidebar-navigation">
-          <div className="nav-button" onClick={() => navigate('/dashboard')}>
-            <img src={imgIcon9} alt="" className="nav-icon" />
-            <span>Dashboard</span>
-          </div>
-          <div className="nav-button active">
-            <img src={imgIcon10} alt="" className="nav-icon" />
-            <span>Usuários</span>
-          </div>
-          <div className="nav-button" onClick={() => navigate('/financeiro')}>
-            <img src={imgIcon11} alt="" className="nav-icon" />
-            <span>Financeiro</span>
-          </div>
-          <div className="nav-button">
-            <img src={imgIcon12} alt="" className="nav-icon" />
-            <span>Configurações</span>
-          </div>
-          <LogoutSidebarButton />
-        </div>
-      </div>
+      <AdminSidebar />
 
       {/* Navbar */}
       <div className="users-navbar">
