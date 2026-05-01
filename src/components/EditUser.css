@@ -166,9 +166,8 @@
   background: rgba(0, 0, 0, 0.05);
 }
 
-.back-button img {
-  width: 16px;
-  height: 16px;
+.back-button svg {
+  flex-shrink: 0;
 }
 
 .header-title h1 {
@@ -506,7 +505,9 @@
   max-width: 405px;
   box-sizing: border-box;
   position: sticky;
-  top: 113px;
+  /* Scroll em .edit-user-main: inset conta a partir da área rolável — não repetir navbar+padding da viewport */
+  top: 0;
+  align-self: start;
   justify-self: end;
 }
 
@@ -572,6 +573,14 @@
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet: card de ações mais estreito (metade da coluna); mobile estreito continua full width abaixo */
+@media (max-width: 1180px) and (min-width: 481px) {
+  .edit-user-content > .actions-card {
+    width: 50%;
+    justify-self: center;
   }
 }
 

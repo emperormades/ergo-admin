@@ -70,6 +70,10 @@ const DASHBOARD_APAGAR_URL =
 const DASHBOARD_FECHAR_URL =
   'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/sair.svg'
 
+/** Seta voltar (mesmo asset do ergo-enterprise AEPsDoSetor / voltar.svg). */
+const VOLTAR_ICON_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/demo-bucket/aep/voltar.svg'
+
 export const iconUrls = {
   logoInterno: PLACEHOLDER,
   /** Logo da navbar (Dashboard e demais telas que usem menu/logo.svg). */
@@ -115,7 +119,7 @@ export const iconUrls = {
   vision: PLACEHOLDER,
   /** Ícone KPI Usuários ativos (dashboard). */
   usuariosAtivos: DASHBOARD_USUARIOS_ATIVOS_URL,
-  voltar: PLACEHOLDER,
+  voltar: VOLTAR_ICON_URL,
   corrente: PLACEHOLDER,
   fechar: DASHBOARD_FECHAR_URL,
 } as const

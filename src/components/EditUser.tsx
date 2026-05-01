@@ -10,7 +10,6 @@ const imgIcon8 = iconUrls.lupa
 const imgIcon7 = iconUrls.calendario
 const imgIcon2 = iconUrls.setaBaixo
 const imgIcon9 = iconUrls.pessoa
-const imgIcon = iconUrls.voltar
 // Mock data for different users
 const mockUsers = {
   '1': {
@@ -154,8 +153,16 @@ export default function EditUser() {
       {/* Main Content */}
       <div className="edit-user-main">
         <div className="edit-user-header">
-          <button className="back-button" onClick={() => navigate('/usuarios')}>
-            <img src={imgIcon} alt="" />
+          <button type="button" className="back-button" onClick={() => navigate('/usuarios')}>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
+              <path
+                d="M10 12L6 8L10 4"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
             Voltar
           </button>
           <div className="header-title">
