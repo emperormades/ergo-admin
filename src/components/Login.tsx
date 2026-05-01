@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
-import imgLogo from '../../images/logo.png'
-import imgVector from '../../images/password.svg'
 
-// Image assets from Figma
-const imgVector1 = "https://www.figma.com/api/mcp/asset/e314bf99-6f1e-4f63-8831-06aa04db624b"
+const LOGO_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/auth/logo_inicial.png'
+
+const EYE_ICON_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/auth/eye.svg'
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false)
@@ -29,7 +30,7 @@ export default function Login() {
         <div className="login-content">
           <div className="login-card-wrapper">
             <div className="login-logo">
-              <img src={imgLogo} alt="ERGO 360° Logo" />
+              <img src={LOGO_URL} alt="ERGO 360° Logo" />
             </div>
             <div className="login-card">
               <div className="login-card-header">
@@ -72,12 +73,7 @@ export default function Login() {
                       aria-label={showPassword ? 'Ocultar senha' : 'Mostrar senha'}
                     >
                       <div className="eye-icon">
-                        <div className="eye-icon-vector">
-                          <img src={imgVector} alt="" />
-                        </div>
-                        <div className="eye-icon-vector">
-                          <img src={imgVector1} alt="" />
-                        </div>
+                        <img src={EYE_ICON_URL} alt="" />
                       </div>
                     </button>
                   </div>

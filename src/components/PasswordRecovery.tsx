@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './PasswordRecovery.css'
-import imgLogo from '../../images/logo.png'
 
-// Image assets from Figma
+const LOGO_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/auth/logo_inicial.png'
 
 export default function PasswordRecovery() {
   const [email, setEmail] = useState('')
@@ -31,7 +31,7 @@ export default function PasswordRecovery() {
         <div className="password-recovery-content">
           <div className="password-recovery-card-wrapper">
             <div className="password-recovery-logo">
-              <img src={imgLogo} alt="ERGO 360° Logo" />
+              <img src={LOGO_URL} alt="ERGO 360° Logo" />
             </div>
             <div className="password-recovery-card">
               <div className="password-recovery-card-header">

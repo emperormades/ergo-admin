@@ -169,31 +169,12 @@
 .eye-icon {
   width: 16px;
   height: 16px;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.eye-icon-vector {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.eye-icon-vector:first-child {
-  top: 20.84%;
-  left: 8.33%;
-  width: 83.34%;
-  height: 58.32%;
-}
-
-.eye-icon-vector:last-child {
-  top: 37.5%;
-  left: 37.5%;
-  width: 25%;
-  height: 25%;
-}
-
-.eye-icon-vector img {
+.eye-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
