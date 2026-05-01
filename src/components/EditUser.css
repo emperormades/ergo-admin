@@ -22,28 +22,30 @@
 }
 
 .navbar-content {
-  height: 64px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 0 24px;
   gap: 24px;
+  box-sizing: border-box;
 }
 
-.navbar-logo {
-  width: 92.641px;
-  height: 32px;
+.edit-user-navbar .navbar-logo {
+  width: 156px;
+  height: 40px;
   background: white;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 8px;
+  justify-content: flex-start;
+  padding: 0;
+  flex-shrink: 0;
 }
 
-.navbar-logo img {
-  width: 68.641px;
-  height: 32px;
+.edit-user-navbar .navbar-logo img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -188,17 +190,18 @@
 }
 
 .edit-user-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 405px;
   gap: 24px;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .edit-user-left {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 24px;
   min-width: 0;
+  width: 100%;
 }
 
 /* Info Cards */
@@ -208,6 +211,9 @@
   border-radius: 14px;
   padding: 24px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .card-title {
@@ -496,10 +502,12 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 14px;
   padding: 24px;
-  width: 405px;
+  width: 100%;
+  max-width: 405px;
   box-sizing: border-box;
   position: sticky;
   top: 113px;
+  justify-self: end;
 }
 
 .actions-content {
@@ -548,16 +556,18 @@
   opacity: 0.9;
 }
 
-/* Responsive */
-@media (max-width: 1200px) {
+/* Responsive: empilhar antes da coluna esquerda ficar estreita demais ao lado do card de ações */
+@media (max-width: 1180px) {
   .edit-user-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .actions-card {
+    max-width: none;
     width: 100%;
     position: relative;
     top: 0;
+    justify-self: stretch;
   }
 
   .form-row {
@@ -575,6 +585,43 @@
   .edit-user-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .info-card {
+    padding: 16px;
+  }
+
+  .card-title {
+    margin-bottom: 20px;
+  }
+
+  .navbar-content {
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .navbar-date-filter span {
+    display: none;
+  }
+
+  .navbar-date-filter {
+    padding: 0 10px;
+  }
+
+  .toggle-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .extras-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .extras-table-header,
+  .extras-table-row {
+    min-width: 288px;
   }
 }
 
