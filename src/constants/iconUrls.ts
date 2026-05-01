@@ -66,6 +66,10 @@ const DASHBOARD_DUAS_SETAS_URL =
 const DASHBOARD_APAGAR_URL =
   'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/apagar.svg'
 
+/** Fechar modais (X) — mesmo asset que no design (dashboard/sair.svg). */
+const DASHBOARD_FECHAR_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/sair.svg'
+
 export const iconUrls = {
   logoInterno: PLACEHOLDER,
   /** Logo da navbar (Dashboard e demais telas que usem menu/logo.svg). */
@@ -113,5 +117,5 @@ export const iconUrls = {
   usuariosAtivos: DASHBOARD_USUARIOS_ATIVOS_URL,
   voltar: PLACEHOLDER,
   corrente: PLACEHOLDER,
-  fechar: PLACEHOLDER,
+  fechar: DASHBOARD_FECHAR_URL,
 } as const
