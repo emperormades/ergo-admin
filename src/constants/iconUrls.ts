@@ -36,6 +36,12 @@ const MENU_MONEY_URL =
 const MENU_CONFIGURACOES_URL =
   'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/menu/configuracoes.svg'
 
+const DASHBOARD_PACOTE_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/pacote.svg'
+
+const DASHBOARD_GERAR_LINK_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/gerar_link.svg'
+
 export const iconUrls = {
   logoInterno: PLACEHOLDER,
   /** Logo da navbar (Dashboard e demais telas que usem menu/logo.svg). */
@@ -59,7 +65,10 @@ export const iconUrls = {
   download: PLACEHOLDER,
   adicionar: PLACEHOLDER,
   setas: PLACEHOLDER,
-  pacote: PLACEHOLDER,
+  /** Ícone “Adicionar pacote” nas tabelas do dashboard. */
+  pacote: DASHBOARD_PACOTE_URL,
+  /** Ícone “Gerar link” (tabela Renovações). */
+  gerarLink: DASHBOARD_GERAR_LINK_URL,
   lixo: PLACEHOLDER,
   tendencia: PLACEHOLDER,
   receitas: PLACEHOLDER,
