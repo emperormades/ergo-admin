@@ -70,6 +70,30 @@ const DASHBOARD_APAGAR_URL =
 const DASHBOARD_FECHAR_URL =
   'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/dashboard/sair.svg'
 
+/** KPI Financeiro — novas assinaturas. */
+const FINANCE_NOVA_ASSINATURA_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/financeiro/nova_assinatura.svg'
+
+/** KPI Financeiro — base / ARR. */
+const FINANCE_ARR_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/financeiro/arr.svg'
+
+/** KPI Financeiro — receitas de laudos extras. */
+const FINANCE_RECEITA_EXTRAS_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/financeiro/receita_extras.svg'
+
+/** Botão “i” / atenção nos cards KPI (Finance). */
+const FINANCE_ATENCAO_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/financeiro/atencao.svg'
+
+/** Gerar link (barra de filtros Finance). */
+const FINANCE_GERAR_LINK_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/financeiro/gerar_link.svg'
+
+/** Ver detalhes (tabela Finance — coluna ações). */
+const FINANCE_OLHO_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/financeiro/olho.svg'
+
 /** Seta voltar (mesmo asset do ergo-enterprise AEPsDoSetor / voltar.svg). */
 const VOLTAR_ICON_URL =
   'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/demo-bucket/aep/voltar.svg'
@@ -108,18 +132,29 @@ export const iconUrls = {
   laudos: DASHBOARD_LAUDOS_URL,
   /** Apagar / lixeira na tabela de usuários. */
   lixo: DASHBOARD_APAGAR_URL,
+  /** KPI tendência / gráfico (Dashboard; use `financeKpiNovaAssinatura` no Finance para “Novas assinaturas”). */
   tendencia: PLACEHOLDER,
   /** KPI receita / laudos extras (dashboard e telas monetárias). */
   receitas: DASHBOARD_RECEITA_URL,
+  /** Base / ARR (legado; preferir `financeKpiArr` na tela Finance). */
   dinheiro: PLACEHOLDER,
-  info: PLACEHOLDER,
+  /** Ícone info / atenção nos KPIs Finance (`financeiro/atencao.svg`). */
+  info: FINANCE_ATENCAO_URL,
   /** Variação positiva em KPIs (UpArrowIcon.svg; dashboard / financeiro). */
   setaCimaVerde: DASHBOARD_ALTA_URL,
-  correnteBranca: PLACEHOLDER,
-  vision: PLACEHOLDER,
+  /** Botão gerar link (Finance; ícone corrente branco sobre fundo escuro — `financeiro/gerar_link.svg`). */
+  correnteBranca: FINANCE_GERAR_LINK_URL,
+  /** Ver registro — tabela Finance (`financeiro/olho.svg`). */
+  vision: FINANCE_OLHO_URL,
   /** Ícone KPI Usuários ativos (dashboard). */
   usuariosAtivos: DASHBOARD_USUARIOS_ATIVOS_URL,
   voltar: VOLTAR_ICON_URL,
   corrente: PLACEHOLDER,
   fechar: DASHBOARD_FECHAR_URL,
+  /** Financeiro · KPI base / ARR (`financeiro/arr.svg`). */
+  financeKpiArr: FINANCE_ARR_URL,
+  /** Financeiro · KPI receitas laudos extras (`financeiro/receita_extras.svg`). */
+  financeKpiReceitaExtras: FINANCE_RECEITA_EXTRAS_URL,
+  /** Financeiro · KPI novas assinaturas (`financeiro/nova_assinatura.svg`). */
+  financeKpiNovaAssinatura: FINANCE_NOVA_ASSINATURA_URL,
 } as const

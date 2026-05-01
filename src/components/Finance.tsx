@@ -9,9 +9,10 @@ const imgIcon11 = iconUrls.lupa
 const imgIcon10 = iconUrls.calendario
 const imgIcon2 = iconUrls.setaBaixo
 const imgIcon12 = iconUrls.pessoa
-const imgVector1 = iconUrls.tendencia
-const imgVector6 = iconUrls.receitas
-const imgVector3 = iconUrls.dinheiro
+const imgKpiNovaAssinatura = iconUrls.financeKpiNovaAssinatura
+const imgKpiConversaoLaudos = iconUrls.laudos
+const imgKpiReceitaExtras = iconUrls.financeKpiReceitaExtras
+const imgKpiArr = iconUrls.financeKpiArr
 const imgIcon1 = iconUrls.info
 const imgIcon = iconUrls.setaCimaVerde
 const imgIcon3 = iconUrls.download
@@ -177,7 +178,7 @@ export default function Finance() {
               <span>Novas assinaturas</span>
               <div className="kpi-icon-bg">
                 <div className="kpi-icon">
-                  <img src={imgVector1} alt="" className="kpi-icon-img" />
+                  <img src={imgKpiNovaAssinatura} alt="" className="kpi-icon-img" />
                 </div>
               </div>
             </div>
@@ -199,7 +200,7 @@ export default function Finance() {
               <span>Base atual / ARR</span>
               <div className="kpi-icon-bg">
                 <div className="kpi-icon">
-                  <img src={imgVector3} alt="" className="kpi-icon-img" />
+                  <img src={imgKpiArr} alt="" className="kpi-icon-img" />
                 </div>
               </div>
             </div>
@@ -221,7 +222,7 @@ export default function Finance() {
               <span>Receitas laudos extras</span>
               <div className="kpi-icon-bg">
                 <div className="kpi-icon">
-                  <img src={imgVector6} alt="" className="kpi-icon-img" />
+                  <img src={imgKpiReceitaExtras} alt="" className="kpi-icon-img" />
                 </div>
               </div>
             </div>
@@ -243,7 +244,7 @@ export default function Finance() {
               <span>Conversão - Laudos</span>
               <div className="kpi-icon-bg">
                 <div className="kpi-icon">
-                  <img src={imgVector1} alt="" className="kpi-icon-img" />
+                  <img src={imgKpiConversaoLaudos} alt="" className="kpi-icon-img" />
                 </div>
               </div>
             </div>
