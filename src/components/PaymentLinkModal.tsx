@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './PaymentLinkModal.css'
+import { iconUrls } from '../constants/iconUrls'
 
-// Image assets from Figma
-const imgIcon = "https://www.figma.com/api/mcp/asset/64893350-adcb-4a3d-9c93-6c19e6c3bc51"
+const imgFechar = iconUrls.financeModalFechar
 
 interface PaymentLinkModalProps {
   isOpen: boolean
@@ -29,7 +29,7 @@ export default function PaymentLinkModal({ isOpen, onClose, paymentLink = 'https
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>
-          <img src={imgIcon} alt="Fechar" />
+          <img src={imgFechar} alt="Fechar" />
         </button>
 
         <div className="modal-header">

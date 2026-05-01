@@ -94,6 +94,10 @@ const FINANCE_GERAR_LINK_URL =
 const FINANCE_OLHO_URL =
   'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/financeiro/olho.svg'
 
+/** Fechar modal no fluxo Financeiro (`financeiro/sair.svg`). */
+const FINANCE_FECHAR_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/financeiro/sair.svg'
+
 /** Seta voltar (mesmo asset do ergo-enterprise AEPsDoSetor / voltar.svg). */
 const VOLTAR_ICON_URL =
   'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/demo-bucket/aep/voltar.svg'
@@ -150,7 +154,10 @@ export const iconUrls = {
   usuariosAtivos: DASHBOARD_USUARIOS_ATIVOS_URL,
   voltar: VOLTAR_ICON_URL,
   corrente: PLACEHOLDER,
+  /** Fechar modais (AddPackage etc.) — `dashboard/sair.svg`. */
   fechar: DASHBOARD_FECHAR_URL,
+  /** Fechar modais do Finance — `financeiro/sair.svg`. */
+  financeModalFechar: FINANCE_FECHAR_URL,
   /** Financeiro · KPI base / ARR (`financeiro/arr.svg`). */
   financeKpiArr: FINANCE_ARR_URL,
   /** Financeiro · KPI receitas laudos extras (`financeiro/receita_extras.svg`). */
