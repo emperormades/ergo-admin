@@ -1,9 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import './RequestSent.css'
 
-// Image assets from Figma
-const imgLogo = "https://www.figma.com/api/mcp/asset/9c2b1d1b-86a0-4424-9d75-bccc444e2ef6"
-const imgIcon = "https://www.figma.com/api/mcp/asset/eaae0dc9-ae6a-4caf-a429-3f2eb5a4962f"
+const LOGO_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/auth/logo_inicial.png'
+
+const CHECK_ICON_URL =
+  'https://ixvxepakkdqeaaodseel.supabase.co/storage/v1/object/public/ergo-admin/auth/check.svg'
 
 export default function RequestSent() {
   const navigate = useNavigate()
@@ -18,7 +20,7 @@ export default function RequestSent() {
         <div className="request-sent-content">
           <div className="request-sent-card-wrapper">
             <div className="request-sent-logo">
-              <img src={imgLogo} alt="ERGO 360° Logo" />
+              <img src={LOGO_URL} alt="ERGO 360° Logo" />
             </div>
             <div className="request-sent-card">
               <div className="request-sent-card-header">
@@ -30,7 +32,7 @@ export default function RequestSent() {
               <div className="request-sent-content-area">
                 <div className="success-alert">
                   <div className="success-icon">
-                    <img src={imgIcon} alt="Success icon" />
+                    <img src={CHECK_ICON_URL} alt="Success icon" />
                   </div>
                   <p className="success-message">
                     Se o email existir, enviaremos um link para redefinir sua senha.
@@ -44,9 +46,6 @@ export default function RequestSent() {
                   Voltar para o login
                 </button>
               </div>
-            </div>
-            <div className="request-sent-footer">
-              <p>Protótipo — navegação simulada</p>
             </div>
           </div>
         </div>
