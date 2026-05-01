@@ -31,6 +31,12 @@
   box-sizing: border-box;
 }
 
+.sidebar-navigation::after {
+  content: '';
+  flex: 1;
+  min-height: 0;
+}
+
 .nav-button {
   height: 36px;
   display: flex;
@@ -43,6 +49,16 @@
   font-family: Arial, sans-serif;
   font-size: 14px;
   color: #0a0a0a;
+}
+
+.sidebar-navigation button.nav-button {
+  text-align: left;
+  appearance: none;
+  background: transparent;
+  border: none;
+  font: inherit;
+  width: 100%;
+  margin: 0;
 }
 
 .nav-button:hover {
@@ -60,15 +76,14 @@
   flex-shrink: 0;
 }
 
-.logout-button {
+.nav-button.nav-button-logout {
   margin-top: auto;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 8px;
+  color: #dc2626;
 }
 
-.logout-button:hover {
-  background: rgba(220, 38, 38, 0.1);
-  color: #dc2626;
+.nav-button.nav-button-logout:hover {
+  background: #fee2e2;
+  color: #991b1b;
 }
 
 /* Navbar */
@@ -94,8 +109,8 @@
 }
 
 .navbar-logo {
-  width: 92.641px;
-  height: 32px;
+  width: 100px;
+  height: 36px;
   background: white;
   border-radius: 10px;
   display: flex;
@@ -105,8 +120,8 @@
 }
 
 .navbar-logo img {
-  width: 68.641px;
-  height: 32px;
+  width: 80px;
+  height: 36px;
   object-fit: contain;
 }
 

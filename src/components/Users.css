@@ -31,6 +31,12 @@
   box-sizing: border-box;
 }
 
+.sidebar-navigation::after {
+  content: '';
+  flex: 1;
+  min-height: 0;
+}
+
 .nav-button {
   height: 36px;
   display: flex;
@@ -45,6 +51,14 @@
   color: #0a0a0a;
   background: transparent;
   border: none;
+}
+
+.sidebar-navigation button.nav-button {
+  text-align: left;
+  appearance: none;
+  font: inherit;
+  width: 100%;
+  margin: 0;
 }
 
 .nav-button:hover {
@@ -62,15 +76,14 @@
   flex-shrink: 0;
 }
 
-.logout-button {
+.nav-button.nav-button-logout {
   margin-top: auto;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 8px;
+  color: #dc2626;
 }
 
-.logout-button:hover {
-  background: rgba(220, 38, 38, 0.1);
-  color: #dc2626;
+.nav-button.nav-button-logout:hover {
+  background: #fee2e2;
+  color: #991b1b;
 }
 
 /* Navbar */
