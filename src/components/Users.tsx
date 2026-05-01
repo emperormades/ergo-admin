@@ -3,26 +3,25 @@ import { useNavigate } from 'react-router-dom'
 import './Users.css'
 import AddPackageModal from './AddPackageModal'
 import ConfirmDeleteModal from './ConfirmDeleteModal'
-import imgImageErgo360 from '../../images/logo_interno.png'
-import imgIcon14 from '../../images/lupa.svg'
-import imgIcon13 from '../../images/calendario.svg'
-import imgIcon3 from '../../images/seta_baixo.svg'
-import imgIcon15 from '../../images/pessoa.svg'
-import imgIcon9 from '../../images/dashboard.svg'
-import imgIcon10 from '../../images/usuarios.svg'
-import imgIcon11 from '../../images/financeiro.svg'
-import imgIcon12 from '../../images/configuracoes.svg'
-import imgIcon from '../../images/download.svg'
-import imgIcon1 from '../../images/adicionar.svg'
-import imgIcon4 from '../../images/setas.svg'
-import imgIcon5 from '../../images/pacote.svg'
-import imgIcon6 from '../../images/configuracoes.svg'
-import imgIcon7 from '../../images/lixo.svg'
+import { iconUrls } from '../constants/iconUrls'
 
-// Image assets from Figma
+const imgImageErgo360 = iconUrls.logoInterno
+const imgIcon14 = iconUrls.lupa
+const imgIcon13 = iconUrls.calendario
+const imgIcon3 = iconUrls.setaBaixo
+const imgIcon15 = iconUrls.pessoa
+const imgIcon9 = iconUrls.dashboard
+const imgIcon10 = iconUrls.usuarios
+const imgIcon11 = iconUrls.financeiro
+const imgIcon12 = iconUrls.configuracoes
+const imgIcon = iconUrls.download
+const imgIcon1 = iconUrls.adicionar
+const imgIcon4 = iconUrls.setas
+const imgIcon5 = iconUrls.pacote
+const imgIcon6 = iconUrls.configuracoes
+const imgIcon7 = iconUrls.lixo
+
 const imgIcon2 = imgIcon14
-const imgIcon8 = "https://www.figma.com/api/mcp/asset/8e3f90ed-36b1-49b9-9e04-7ba82998d3c0"
-
 interface User {
   id: number
   name: string

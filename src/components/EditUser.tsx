@@ -2,19 +2,18 @@ import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './EditUser.css'
 import ConfirmDeleteModal from './ConfirmDeleteModal'
-import imgImageErgo360 from '../../images/logo_interno.png'
-import imgIcon8 from '../../images/lupa.svg'
-import imgIcon7 from '../../images/calendario.svg'
-import imgIcon2 from '../../images/seta_baixo.svg'
-import imgIcon9 from '../../images/pessoa.svg'
-import imgIcon from '../../images/voltar.svg'
-import imgIcon3 from '../../images/dashboard.svg'
-import imgIcon4 from '../../images/usuarios.svg'
-import imgIcon5 from '../../images/financeiro.svg'
-import imgIcon6 from '../../images/configuracoes.svg'
+import { iconUrls } from '../constants/iconUrls'
 
-// Image assets from Figma
-const imgIcon1 = "https://www.figma.com/api/mcp/asset/80d311a9-5df6-4059-98f9-3a9052908769"
+const imgImageErgo360 = iconUrls.logoInterno
+const imgIcon8 = iconUrls.lupa
+const imgIcon7 = iconUrls.calendario
+const imgIcon2 = iconUrls.setaBaixo
+const imgIcon9 = iconUrls.pessoa
+const imgIcon = iconUrls.voltar
+const imgIcon3 = iconUrls.dashboard
+const imgIcon4 = iconUrls.usuarios
+const imgIcon5 = iconUrls.financeiro
+const imgIcon6 = iconUrls.configuracoes
 
 // Mock data for different users
 const mockUsers = {

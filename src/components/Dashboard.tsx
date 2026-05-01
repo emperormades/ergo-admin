@@ -4,20 +4,20 @@ import './Dashboard.css'
 import LineChart from './LineChart'
 import BarChart from './BarChart'
 import AddPackageModal from './AddPackageModal'
-import imgImageErgo360 from '../../images/logo_interno.png'
-import imgIcon3 from '../../images/dashboard.svg'
-import imgIcon4 from '../../images/usuarios.svg'
-import imgIcon5 from '../../images/financeiro.svg'
-import imgIcon6 from '../../images/configuracoes.svg'
-import imgIcon from '../../images/pacote.svg'
-import imgIcon1 from '../../images/corrente.svg'
-import imgIcon2 from '../../images/corrente.svg'
-import imgIcon9 from '../../images/lupa.svg'
-import imgIcon7 from '../../images/calendario.svg'
-import imgIcon8 from '../../images/seta_baixo.svg'
-import imgIcon10 from '../../images/pessoa.svg'
+import { iconUrls } from '../constants/iconUrls'
 
-// Image assets from Figma
+const imgImageErgo360 = iconUrls.logoInterno
+const imgIcon3 = iconUrls.dashboard
+const imgIcon4 = iconUrls.usuarios
+const imgIcon5 = iconUrls.financeiro
+const imgIcon6 = iconUrls.configuracoes
+const imgIcon = iconUrls.pacote
+const imgIcon1 = iconUrls.corrente
+const imgIcon2 = iconUrls.corrente
+const imgIcon9 = iconUrls.lupa
+const imgIcon7 = iconUrls.calendario
+const imgIcon8 = iconUrls.setaBaixo
+const imgIcon10 = iconUrls.pessoa
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<'Empresa' | 'Autônomo'>('Empresa')

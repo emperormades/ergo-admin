@@ -2,25 +2,25 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Finance.css'
 import PaymentLinkModal from './PaymentLinkModal'
-import imgImageErgo360 from '../../images/logo_interno.png'
-import imgIcon11 from '../../images/lupa.svg'
-import imgIcon10 from '../../images/calendario.svg'
-import imgIcon2 from '../../images/seta_baixo.svg'
-import imgIcon12 from '../../images/pessoa.svg'
-import imgIcon6 from '../../images/dashboard.svg'
-import imgIcon7 from '../../images/usuarios.svg'
-import imgIcon8 from '../../images/financeiro.svg'
-import imgIcon9 from '../../images/configuracoes.svg'
-import imgVector1 from '../../images/tendencia.svg'
-import imgVector6 from '../../images/receitas.svg'
-import imgVector3 from '../../images/dinheiro.svg'
-import imgIcon1 from '../../images/info.svg'
-import imgIcon from '../../images/seta_cima_verde.svg'
-import imgIcon3 from '../../images/download.svg'
-import imgIcon4 from '../../images/corrente_branca.svg'
-import imgIcon5 from '../../images/vision.svg'
+import { iconUrls } from '../constants/iconUrls'
 
-// Image assets from Figma
+const imgImageErgo360 = iconUrls.logoInterno
+const imgIcon11 = iconUrls.lupa
+const imgIcon10 = iconUrls.calendario
+const imgIcon2 = iconUrls.setaBaixo
+const imgIcon12 = iconUrls.pessoa
+const imgIcon6 = iconUrls.dashboard
+const imgIcon7 = iconUrls.usuarios
+const imgIcon8 = iconUrls.financeiro
+const imgIcon9 = iconUrls.configuracoes
+const imgVector1 = iconUrls.tendencia
+const imgVector6 = iconUrls.receitas
+const imgVector3 = iconUrls.dinheiro
+const imgIcon1 = iconUrls.info
+const imgIcon = iconUrls.setaCimaVerde
+const imgIcon3 = iconUrls.download
+const imgIcon4 = iconUrls.correnteBranca
+const imgIcon5 = iconUrls.vision
 
 interface Charge {
   id: string
